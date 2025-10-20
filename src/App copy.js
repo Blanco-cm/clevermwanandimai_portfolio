@@ -1,3 +1,4 @@
+// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './contexts/ThemeContext';
@@ -9,9 +10,6 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import NotFound from './pages/NotFound';
-import ResumePage from './pages/Resume page';
-import AchievementsExperiences from './pages/AchievementsExperiences';
-import SkillsPage from './pages/Skills';
 import './styles/global.css';
 
 function App() {
@@ -26,9 +24,6 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/resume" element={<ResumePage />} />
-            <Route path="/achievements-experiences" element={<AchievementsExperiences />} />
-            <Route path="/skills" element={<SkillsPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>

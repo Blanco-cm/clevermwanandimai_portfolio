@@ -1,0 +1,357 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  body {
+    @apply antialiased;
+    background: linear-gradient(135deg, #07d4db 0%, #02142b 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #root {
+    @apply w-full;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100 dark:bg-gray-800;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-blue-600 dark:bg-blue-400 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-blue-700 dark:bg-blue-300;
+  }
+}
+
+@layer components {
+  /* Container utilities */
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Centered content */
+  .centered {
+    @apply flex flex-col items-center justify-center text-center;
+  }
+
+  .centered-text {
+    @apply text-center;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  /* Button styles */
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg shadow-lg hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 border-2 border-blue-600 text-blue-600 dark:border-blue-400 dark:text-blue-400 font-semibold rounded-lg hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 transition-all duration-200;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-white dark:bg-gray-900 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card-hover {
+    @apply card hover:transform hover:-translate-y-1;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+  }
+
+  /* Section styles */
+  .section {
+    @apply py-20 w-full;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-content {
+    @apply w-full;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-16 text-center;
+    text-align: center;
+  }
+
+  /* Navigation styles */
+  .nav-link {
+    @apply relative text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200;
+  }
+
+  .nav-link::after {
+    @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 dark:bg-blue-400 transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  /* Grid and Flex utilities */
+  .grid-centered {
+    @apply grid;
+    place-items: center;
+  }
+
+  .flex-centered {
+    @apply flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Text alignment */
+  .text-justified {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  /* Animation classes */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeInUp {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  /* Glass morphism effect */
+  .glass {
+    @apply bg-white/10 dark:bg-gray-900/10 backdrop-blur-md border border-white/20 dark:border-gray-700/20;
+  }
+
+  /* Skill bar animation */
+  .skill-bar {
+    @apply w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 overflow-hidden;
+  }
+
+  .skill-progress {
+    @apply bg-gradient-to-r from-blue-500 to-purple-600 h-3 rounded-full transition-all duration-1000 ease-out;
+  }
+
+  /* Project card */
+  .project-card {
+    @apply card-hover overflow-hidden w-full;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Stats counter */
+  .stat-number {
+    @apply text-4xl md:text-5xl font-bold gradient-text;
+  }
+
+  /* Form styles */
+  .form-input {
+    @apply w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-800 dark:text-white transition-colors duration-200;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 text-center;
+  }
+}
+
+@layer utilities {
+  /* Center utilities */
+  .absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grid-center {
+    display: grid;
+    place-items: center;
+  }
+
+  /* Text utilities */
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* Ensure all direct children of main are centered */
+main > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Center all headings and paragraphs */
+h1, h2, h3, h4, h5, h6, p {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply text-center;
+}
+
+p {
+  @apply text-justified text-center;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Center all buttons and links */
+button, a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Center all images */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Center all lists */
+ul, ol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  text-align: center;
+}
+@layer components {
+  /* Navigation frame effects */
+  .nav-frame {
+    @apply relative overflow-hidden;
+  }
+
+  .nav-frame::before {
+    content: '';
+    @apply absolute inset-0 border-2 border-transparent rounded-lg transition-all duration-300;
+  }
+
+  .nav-frame:hover::before {
+    @apply border-blue-300 dark:border-blue-600;
+  }
+
+  .nav-frame-active::before {
+    @apply border-blue-400 dark:border-blue-400;
+  }
+
+  /* Gradient overlay for navigation items */
+  .nav-gradient-overlay {
+    @apply absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 opacity-0 transition-opacity duration-300;
+  }
+
+  .nav-frame:hover .nav-gradient-overlay {
+    @apply opacity-100;
+  }
+
+  /* Navigation item animations */
+  @keyframes navPulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.02);
+    }
+  }
+
+  .nav-frame:hover {
+    animation: navPulse 0.3s ease-in-out;
+  }
+
+  /* Active state indicators */
+  .nav-indicator {
+    @apply absolute top-2 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-blue-600 dark:bg-blue-400 rounded-full;
+  }
+
+  /* Mobile navigation enhancements */
+  .mobile-nav-item {
+    @apply transition-all duration-200 transform hover:scale-105;
+  }
+}
+
+@layer utilities {
+  /* Smooth transitions for navigation */
+  .nav-transition {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Hover lift effect for navigation */
+  .nav-hover-lift {
+    @apply transition-transform duration-200 hover:-translate-y-0.5;
+  }
+}
+.nav-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.dark .nav-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+}
