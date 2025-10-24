@@ -60,10 +60,29 @@ const ProjectsPage = () => {
         { name: "Frontend", files: 28 },
         { name: "Data Processing", files: 8 }
       ],
-      githubUrl: "https://github.com/clevermwanandimai/drone-monitoring-system",
+      githubUrl: "https://github.com/clevermwanandimai/drone-delivery-system",
       liveDemo: null,
       image: "/images/drone-monitoring-system.jpg"
     }
+    {
+      id: 1,
+      title: "Drone delivery",
+      tools: ["React", "Node.js", "java", "REST API Endpoints"],
+      status: "In Progress",
+      completionDate: "2024-10-15",
+      progress: 80,
+      details: "A full-stack e-commerce solution with user authentication, payment processing, and admin dashboard.",
+      documentation: "/docs/ecommerce-platform.pdf",
+      folders: [
+        { name: "Frontend", files: 24 },
+        { name: "Backend", files: 18 },
+        { name: "Database", files: 5 },
+        { name: "Documentation", files: 3 }
+      ],
+      githubUrl: "https://github.com/clevermwanandimai/drone-delivery-system",
+      liveDemo: "https://ecommerce-demo.com",
+      image: "/images/ecommerce-project.jpg"
+    },
   ];
 
   // Sample comments data
