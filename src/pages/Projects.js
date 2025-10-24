@@ -48,7 +48,7 @@ const ProjectsPage = () => {
     },
     {
       id: 3,
-      title: "Drone monitoring and control system",
+      title: "Drone Delivery system ",
       tools: ["Java", "React", "MySQL", ],
       status: "Planning",
       completionDate: "2024-06-30",
