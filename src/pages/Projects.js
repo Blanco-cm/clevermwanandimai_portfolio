@@ -49,7 +49,7 @@ const ProjectsPage = () => {
     {
       id: 3,
       title: "Drone Delivery system ",
-      tools: ["Java", "React", "MySQL", ],
+      tools: ["Java", "React", "REST API Endpoints", ],
       status: "Planning",
       completionDate: "2024-06-30",
       progress: 20,
@@ -71,7 +71,7 @@ const ProjectsPage = () => {
       status: "In Progress",
       completionDate: "2024-10-15",
       progress: 80,
-      details: "A full-stack e-commerce solution with user authentication, payment processing, and admin dashboard.",
+      details: "A full-stack Drone delivery solution with user authentication, payment processing, and admin dashboard.",
       documentation: "/docs/ecommerce-platform.pdf",
       folders: [
         { name: "Frontend", files: 24 },
