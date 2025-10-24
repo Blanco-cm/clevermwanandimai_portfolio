@@ -22,6 +22,7 @@ const ProjectsPage = () => {
         { name: "Frontend", files: 24 },
         { name: "Backend", files: 18 },
         { name: "Database", files: 5 },
+        
         { name: "Documentation", files: 3 }
       ],
       githubUrl: "https://github.com/clevermwanandimai/ecommerce-platform",
