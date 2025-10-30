@@ -72,7 +72,7 @@ const ProjectsPage = () => {
       status: "completed",
       completionDate: "2025-10-20",
       progress: 20,
-      details: "Interactive dashboard for data visualization and business intelligence reporting.",
+      details: "Interactive dashboard for data visualization and business intelligence reporting drone that are used to deliver goods.",
       documentation: "/docs/drone-monitoring-system.pdf",
       folders: [
         { name: "Backend API", files: 15 },
@@ -83,25 +83,7 @@ const ProjectsPage = () => {
       liveDemo: null,
       image: "/images/drone-monitoring-system.jpg"
     },
-    {
-      id: 1,
-      title: "Drone delivery",
-      tools: ["React", "Node.js", "java", "REST API Endpoints"],
-      status: "In Progress",
-      completionDate: "2024-10-15",
-      progress: 80,
-      details: "A full-stack Drone delivery solution with user authentication, payment processing, and admin dashboard.",
-      documentation: "/docs/ecommerce-platform.pdf",
-      folders: [
-        { name: "Frontend", files: 24 },
-        { name: "Backend", files: 18 },
-        { name: "Database", files: 5 },
-        { name: "Documentation", files: 3 }
-      ],
-      githubUrl: "https://github.com/clevermwanandimai/drone-delivery-system",
-      liveDemo: "https://ecommerce-demo.com",
-      image: "/images/ecommerce-project.jpg"
-    },
+    
   ];
 
   // Sample comments data
