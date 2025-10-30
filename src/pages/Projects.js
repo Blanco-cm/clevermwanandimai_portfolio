@@ -47,6 +47,24 @@ const ProjectsPage = () => {
       liveDemo: null,
       image: "/images/task-manager.jpg"
     },
+        {
+      id: 2,
+      title: "Fintech (roboAdviser)",
+      tools: ["React", "API ", "Java", "MySQL"],
+      status: "completed",
+      completionDate: "2024-03-30",
+  progress: 100,
+      details: "Application for task management with real-time synchronization and offline capabilities on how to invest.",
+  documentation: "/assets/web-based-hybrid-algorithm-for-Schedulling-timetable.pdf",
+      folders: [
+        { name: "Mobile App", files: 32 },
+        { name: "Backend", files: 12 },
+        { name: "Configuration", files: 4 }
+      ],
+      githubUrl: "https://github.com/Blanco-cm/fintech",
+      liveDemo: null,
+      image: "/images/task-manager.jpg"
+    },
     {
       id: 3,
       title: "Drone Delivery system ",
