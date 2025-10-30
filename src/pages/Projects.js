@@ -82,7 +82,7 @@ const ProjectsPage = () => {
       githubUrl: "https://github.com/clevermwanandimai/drone-delivery-system",
       liveDemo: null,
       image: "/images/drone-monitoring-system.jpg"
-    }
+    },
     {
       id: 1,
       title: "Drone delivery",
