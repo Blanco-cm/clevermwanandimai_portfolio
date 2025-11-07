@@ -245,7 +245,7 @@ const ProjectsPage = () => {
         {project.githubUrl && (
           <button 
             style={styles.actionButton}
-            onClick={() => window.open(project.githubUrl, '_blank')}
+            onClick={() => window.open(project.githubUrl, 'https://github.com/Blanco-cm')}
           >
             💻 View Code
           </button>
