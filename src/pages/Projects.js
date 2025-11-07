@@ -89,11 +89,11 @@ const ProjectsPage = () => {
       tools: ["Python", "React", "fastST API Endpoints", ],
       status: "completed",
       completionDate: "2025-10-20",
-      progress: 20,
+      progress: 100,
       details: "Zimbabwean companies face significant challenges in maintaining market competitiveness and financial stability due to the absence of sophisticated, real-time stock analysis systems that integrate seasonal, fundamental, technical, and technological approaches. This technological gap prevents local businesses from accurately predicting market trends, understanding seasonal demand patterns, and making data-driven investment decisions, ultimately contributing to corporate failures and reduced foreign investment in an already volatile economic landscape. The lack of an integrated analytical framework specifically tailored to Zimbabwe's unique market conditions and seasonal patterns leaves companies vulnerable to unexpected market shifts and unable to develop proactive strategies for growth and stability.",
       documentation: "/docs/drone-monitoring-system.pdf",
       folders: [
-        { name: "Backend fastAPI", files: 15 },
+        { name: "Backend fastAPI", files: 17 },
         { name: "Frontend", files: 28 },
         { name: "Data Processing", files: 8 }
       ],
