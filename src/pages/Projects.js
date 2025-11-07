@@ -25,7 +25,7 @@ const ProjectsPage = () => {
         
         { name: "Documentation", files: 3 }
       ],
-      githubUrl: "https://github.com/Blanco-cm/ecommerce-platform",
+      githubUrl: "https://github.com/Blanco-cm/fintech",
       liveDemo: "https://ecommerce-demo.com",
       image: "/images/ecommerce-project.jpg"
     },
