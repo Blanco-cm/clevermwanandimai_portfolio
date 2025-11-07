@@ -71,7 +71,7 @@ const ProjectsPage = () => {
       tools: ["Java", "React", "REST API Endpoints", ],
       status: "completed",
       completionDate: "2025-10-20",
-      progress: 20,
+      progress: 100,
       details: "Interactive dashboard for data visualization and business intelligence reporting drone that are used to deliver goods.",
       documentation: "/docs/drone-monitoring-system.pdf",
       folders: [
