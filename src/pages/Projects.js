@@ -43,7 +43,7 @@ const ProjectsPage = () => {
         { name: "Backend", files: 12 },
         { name: "Configuration", files: 4 }
       ],
-      githubUrl: "https://github.com/username/task-manager",
+      githubUrl: "https://github.com/Blanco-cm/task-manager",
       liveDemo: null,
       image: "/images/task-manager.jpg"
     },
