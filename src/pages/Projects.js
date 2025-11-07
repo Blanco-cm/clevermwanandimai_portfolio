@@ -79,7 +79,7 @@ const ProjectsPage = () => {
         { name: "Frontend", files: 28 },
         { name: "Data Processing", files: 8 }
       ],
-      githubUrl: "https://github.com/Blanco-cm/drone-delivery-system",
+      githubUrl: "https://github.com/Blanco-cm/Drone-delivery",
       liveDemo: null,
       image: "/images/drone-monitoring-system.jpg"
     },
